@@ -5,7 +5,6 @@ API desenvolvida em Java 21 e Spring Boot para gerenciamento de usuários, produ
 ## Requisitos
 
 - Java 21
-- Postman para testar os endpoints
 
 O projeto inclui o Maven Wrapper, portanto não é necessário instalar o Maven.
 
@@ -33,14 +32,3 @@ Na pasta do projeto, execute:
 ```powershell
 .\mvnw.cmd clean test
 ```
-
-O projeto possui 37 testes. Ao concluir com sucesso, o terminal exibirá `BUILD SUCCESS`.
-
-### Testes no Postman
-
-1. Mantenha a aplicação em execução.
-2. Importe o arquivo `AutoBots-ATVIV.postman_collection.json`.
-3. Selecione a coleção **AutoBots - ATVIV - JWT e perfis**.
-4. Execute as 26 requisições na ordem, utilizando o Runner.
-
-A coleção verifica autenticação e permissões dos perfis. Respostas `401` e `403` são esperadas nos cenários de acesso não autorizado.
